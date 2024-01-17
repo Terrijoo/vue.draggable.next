@@ -4470,7 +4470,9 @@ function _createClass(Constructor, protoProps, staticProps) {
 
 
 var getHtmlElementFromNode = function getHtmlElementFromNode(node) {
-  var el = node.el || Array.isArray(node.children) && node.children[0].el.parentNode;
+  var _node$children$0$el;
+
+  var el = node.el || Array.isArray(node.children) && ((_node$children$0$el = node.children[0].el) === null || _node$children$0$el === void 0 ? void 0 : _node$children$0$el.parentNode);
   return el || {};
 };
 

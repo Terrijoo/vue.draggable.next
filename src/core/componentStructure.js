@@ -1,6 +1,7 @@
 const getHtmlElementFromNode = (node) => {
   const el =
-    node.el || (Array.isArray(node.children) && node.children[0].el.parentNode);
+    node.el ||
+    (Array.isArray(node.children) && node.children[0].el?.parentNode);
   return el || {};
 };
 const addContext = (domElement, context) =>
